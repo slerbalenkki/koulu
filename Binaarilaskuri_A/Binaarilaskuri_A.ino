@@ -6,6 +6,9 @@
 #define LEDON HIGH
 #define LEDOFF LOW
 
+#define viive 1000
+
+
 void setup() {
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
@@ -92,7 +95,34 @@ void ysi(){
   turnOn  (LED4);
 }
 
-void loop() {
-  viisi();
+void kymppi() {
+  turnOn  (LED1);
+  turnOn  (LED2);
+  turnOn  (LED3);
+  turnOn  (LED4);   
+}
 
+void loop() {
+  nolla();
+  delay(viive);
+  yksi();
+  delay(viive);
+  kaksi();
+  delay(viive);
+  kolme();
+  delay(viive);
+  nelja();
+  delay(viive);
+  viisi();
+  delay(viive);
+  kuusi();
+  delay(viive);
+  seiska();
+  delay(viive);
+  kasi();
+  delay(viive);
+  ysi();
+  delay(viive);
+  kymppi();
+  delay(viive);
 }
