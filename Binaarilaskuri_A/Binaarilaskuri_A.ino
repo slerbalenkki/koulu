@@ -3,8 +3,8 @@
 #define LED3 11
 #define LED4 10
 
-#define LEDON LOW
-#define LEDOFF HIGH
+#define LEDON HIGH
+#define LEDOFF LOW
 
 void setup() {
   pinMode(LED1, OUTPUT);
@@ -64,7 +64,35 @@ void viisi(){
   turnOff (LED4);
 }
 
+void kuusi(){
+  turnOff (LED1);
+  turnOn  (LED2);
+  turnOn  (LED3);
+  turnOff (LED4);
+}
+
+void seiska(){
+  turnOn  (LED1);
+  turnOn  (LED2);
+  turnOn  (LED3);
+  turnOff (LED4);   
+}
+
+void kasi(){
+  turnOff (LED1);
+  turnOff (LED2);
+  turnOff (LED3);
+  turnOn  (LED4);
+}
+
+void ysi(){
+  turnOn  (LED1);
+  turnOff (LED2);
+  turnOff (LED3);
+  turnOn  (LED4);
+}
+
 void loop() {
-  // put your main code here, to run repeatedly:
+  viisi();
 
 }
